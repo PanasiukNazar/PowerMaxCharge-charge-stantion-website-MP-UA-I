@@ -148,7 +148,11 @@
                                 оформлення замовлення.
                             </p>
                             <!-- Form -->
-                            <form class="form" method="post" action="#">
+                            <form
+                                class="form"
+                                method="GET"
+                                action="thanks.html"
+                            >
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-12">
                                         <div class="form-group">
@@ -157,7 +161,7 @@
                                                 type="text"
                                                 name="name"
                                                 placeholder=""
-                                                required="required"
+                                                required
                                             />
                                         </div>
                                     </div>
@@ -170,7 +174,7 @@
                                                 type="text"
                                                 name="name"
                                                 placeholder=""
-                                                required="required"
+                                                required
                                             />
                                         </div>
                                     </div>
@@ -185,7 +189,7 @@
                                                 type="email"
                                                 name="email"
                                                 placeholder=""
-                                                required="required"
+                                                required
                                             />
                                         </div>
                                     </div>
@@ -200,7 +204,7 @@
                                                 type="number"
                                                 name="number"
                                                 placeholder=""
-                                                required="required"
+                                                required
                                             />
                                         </div>
                                     </div>
@@ -235,7 +239,7 @@
                                                 type="text"
                                                 name="address"
                                                 placeholder=""
-                                                required="required"
+                                                required
                                             />
                                         </div>
                                     </div>
@@ -248,11 +252,26 @@
                                                 type="text"
                                                 name="address"
                                                 placeholder=""
-                                                required="required"
+                                                required
                                             />
                                         </div>
                                     </div>
                                 </div>
+                                <!-- Button Widget -->
+                                <div class="single-widget get-button">
+                                    <div class="content">
+                                        <a class="button">
+                                            <button
+                                                class="btn btn-primary py-4 px-lg-5 d-none d-lg-block"
+                                                type="submit"
+                                                data-store-el="cartEmptyDisabled"
+                                            >
+                                                Оформити
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/ End Button Widget -->
                             </form>
                             <!--/ End Form -->
                         </div>
@@ -294,21 +313,6 @@
                                 </div>
                             </div>
                             <!--/ End Order Widget -->
-
-                            <!-- Button Widget -->
-                            <div class="single-widget get-button">
-                                <div class="content">
-                                    <a class="button" href="thanks.html">
-                                        <button
-                                            class="btn"
-                                            data-store-el="cartEmptyDisabled"
-                                        >
-                                            Оформити
-                                        </button>
-                                    </a>
-                                </div>
-                            </div>
-                            <!--/ End Button Widget -->
                         </div>
                     </div>
                 </div>
