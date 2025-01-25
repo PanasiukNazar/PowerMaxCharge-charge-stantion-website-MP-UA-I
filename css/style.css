@@ -583,6 +583,8 @@ header h2 {
     height: auto;
     display: block;
     transition: opacity 0.3s ease;
+    height: 400px;
+    object-fit: cover;
 }
 
 .product-img img.hover-img {
@@ -674,6 +676,10 @@ header h2 {
     background-color: #f9f9f9;
 }
 
+.shopping-cart .image img {
+    height: 200px;
+}
+
 .shopping-cart .container {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -715,22 +721,21 @@ header h2 {
 .input-group {
     display: flex;
     align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
 }
 
 .input-group .button {
     background-color: #06bbcc;
     color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
 }
 
 .input-group .input-number {
-    width: 50px;
     text-align: center;
+    width: 35px;
     border: 1px solid #ddd;
-    padding: 5px;
-    margin: 0 10px;
 }
 
 .input-group .btn-number {
@@ -988,4 +993,22 @@ header h2 {
 .sale-tag .discount-percentage {
     font-size: 0.8em;
     margin-left: 5px;
+}
+
+@media (max-width: 992px) {
+    thead {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    thead {
+        display: none;
+    }
+    tbody tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .button5 {
+        column-gap: 10px;
+    }
 }
