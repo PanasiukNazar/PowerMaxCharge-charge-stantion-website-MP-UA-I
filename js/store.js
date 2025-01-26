@@ -35,6 +35,7 @@ function initStore(products) {
         itemToggleFavorite: 'itemToggleFavorite',
         itemAddToCart: 'itemAddToCart',
         itemLink: 'itemLink',
+        itemDiscountPrice: 'itemDiscountPrice',
 
         productDetails: 'productDetails',
         productDetailsTemplate: 'productDetailsTemplate',
@@ -363,6 +364,7 @@ function initStore(products) {
         const itemTitle = queryEl(ELEMENTS.itemTitle, element);
         const itemDescription = queryEl(ELEMENTS.itemDescription, element);
         const itemPrice = queryEl(ELEMENTS.itemPrice, element);
+        const itemDiscountPrice = queryEl(ELEMENTS.itemDiscountPrice, element);
         const itemToggleFavorite = queryEl(
             ELEMENTS.itemToggleFavorite,
             element,
@@ -388,6 +390,10 @@ function initStore(products) {
 
         if (itemPrice) {
             itemPrice.textContent = product.price;
+        }
+
+        if (itemDiscountPrice) {
+            itemDiscountPrice.textContent = product.discountPrice;
         }
 
         if (itemToggleFavorite) {
